@@ -20,6 +20,8 @@ const server=http.createServer((req,res)=>{
  // Other hosts reach this server through --host-resolver-rules, so their URLs carry no port.
  const host=req.headers.host.split(':')[0];
  if(host==='weather.com'){res.setHeader('Content-Type','text/html');res.end(`<!doctype html><title>Forecast</title><main id="forecast">Today: sunny</main><div id="WxuAd-top">AdGuard Base ad slot</div><div class="adWrapper">AdGuard Mobile Ads slot</div><div class="regionStickyAds">EasyList ad slot</div><script src="http://s.w-x.co/helios/twc/ads.js"></script><script src="http://c.amazon-adsystem.com/aax2/apstag.js"></script>`);return;}
+ if(host==='partner.example'&&req.url==='/frame'){res.setHeader('Content-Type','text/html');res.end('<!doctype html><a href="http://partner.example/landing" target="_blank" style="position:fixed;inset:0;background:#fd0">Partner offer</a>');return;}
+ if(req.url==='/picker'){res.setHeader('Content-Type','text/html');res.end('<!doctype html><title>Picker test</title><h2>Story</h2><iframe id="partner-frame" src="http://partner.example/frame" style="width:320px;height:100px;border:0"></iframe><a id="partner-link" href="http://partner.example/landing" target="_blank" style="display:block;width:320px;height:60px">Partner offer</a><div style="height:2000px"></div><script>window.addEventListener(\'click\',()=>window.open(\'http://partner.example/popunder\'),true);</script>');return;}
  if(host!=='127.0.0.1'){hits[host+req.url]=(hits[host+req.url]??0)+1;res.setHeader('Content-Type','text/javascript');res.end('');return;}
  if(req.url==='/harbor-ad.js'){requests++;res.setHeader('Content-Type','text/javascript');res.end('window.adLoaded=true;');return;}
  res.setHeader('Content-Type','text/html');res.end('<!doctype html><html><head><title>Harbor test page</title></head><body><h1>Publisher content</h1><div class="sponsor">Sponsored test element</div><p>Article text stays visible.</p><script src="/harbor-ad.js"></script></body></html>');
@@ -27,7 +29,7 @@ const server=http.createServer((req,res)=>{
 const url=`http://127.0.0.1:${server.address().port}`;
 let context;
 try{
- context=await chromium.launchPersistentContext(path.join(scratch,'profile'),{channel:'chromium',headless:true,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,`--host-resolver-rules=${['weather.com','s.w-x.co','c.amazon-adsystem.com'].map(h=>`MAP ${h} 127.0.0.1:${server.address().port}`).join(', ')}`],viewport:{width:390,height:844}});
+ context=await chromium.launchPersistentContext(path.join(scratch,'profile'),{channel:'chromium',headless:true,hasTouch:true,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,`--host-resolver-rules=${['weather.com','s.w-x.co','c.amazon-adsystem.com','partner.example'].map(h=>`MAP ${h} 127.0.0.1:${server.address().port}`).join(', ')}`],viewport:{width:390,height:844}});
  const worker=context.serviceWorkers()[0]??await context.waitForEvent('serviceworker');
  const id=new URL(worker.url()).host;
  const settings=await context.newPage();const errors=[];settings.on('pageerror',e=>errors.push(e.message));
@@ -64,7 +66,7 @@ try{
  await settings.emulateMedia({colorScheme:'light'});await settings.screenshot({path:path.join(evidence,'filters-phone.png'),fullPage:true});
  // Picker writes a real rule, then settings show it after reload.
  await worker.evaluate(async()=>{const tabs=await chrome.tabs.query({});const tab=tabs.find(t=>t.url?.startsWith('http://127.0.0.1'));await chrome.tabs.sendMessage(tab.id,{type:'pick'},{frameId:0});});
- await page.locator('h1').click();
+ const heading=await page.locator('h1').boundingBox();await page.mouse.click(heading.x+heading.width/2,heading.y+heading.height/2);
  // Inspect the isolated picker UI through CDP for an end-to-end save.
  const cdp=await context.newCDPSession(page);const {root:dom}=await cdp.send('DOM.getDocument',{depth:-1,pierce:true});
  function find(node){if(node.attributes?.includes('hide'))return node;for(const child of [...(node.children??[]),...(node.shadowRoots??[])]){const found=find(child);if(found)return found;}}
@@ -81,7 +83,21 @@ try{
  assert.equal(await weather.locator('#WxuAd-top').isVisible(),true,'AdGuard Base toggle controls its filters');assert.equal(await weather.locator('.adWrapper').isVisible(),false);assert.equal(await weather.locator('.regionStickyAds').isVisible(),false);
  await settings.locator('#adguard-base').check();await settings.waitForFunction(()=>!document.querySelector('#adguard-base').disabled);
  await settings.screenshot({path:path.join(evidence,'filter-lists.png'),fullPage:true});
+ // Picking an ad in a frame, or an ad link, selects it instead of opening it; page click handlers never see picker taps.
+ // Touch taps here, as on iPhone; the heading above was picked with a mouse click.
+ const pickPage=await context.newPage();await pickPage.goto(`${url}/picker`);await pickPage.waitForTimeout(300);
+ const opened=[];context.on('page',p=>opened.push(p));
+ assert.ok(pickPage.frames().some(f=>f.url()==='http://partner.example/frame'),'Ad frame loaded');assert.equal(await pickPage.locator('#partner-frame').isVisible(),true);assert.equal(await pickPage.locator('#partner-link').isVisible(),true);
+ await worker.evaluate(async page=>{const [tab]=await chrome.tabs.query({url:page});await chrome.tabs.sendMessage(tab.id,{type:'pick'},{frameId:0});},`${url}/picker`);
+ const picker=(id,read)=>pickPage.evaluate(([id,read])=>{for(const el of document.documentElement.children){const node=el.shadowRoot?.getElementById(id);if(node){if(read)return node.textContent;const r=node.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2};}}},[id,read]);
+ const tap=async target=>{const box=typeof target==='string'?await pickPage.locator(target).boundingBox():null;const point=box?{x:box.x+box.width/2,y:box.y+box.height/2}:target;await pickPage.touchscreen.tap(point.x,point.y);await pickPage.waitForTimeout(300);};
+ await pickPage.mouse.move(160,300);await pickPage.mouse.wheel(0,400);await pickPage.waitForTimeout(300);assert.ok(await pickPage.evaluate(()=>scrollY)>0,'Page scrolls while picking');await pickPage.evaluate(()=>scrollTo(0,0));await pickPage.waitForTimeout(100);
+ await tap('#partner-link');assert.equal(await picker('selector',true),'#partner-link');
+ await tap('#partner-frame');assert.equal(await picker('selector',true),'#partner-frame');
+ assert.equal(opened.length,0,'No ad or popunder page opened while picking');assert.equal(pickPage.url(),`${url}/picker`);
+ await tap(await picker('hide'));assert.equal(await pickPage.locator('#partner-frame').isVisible(),false,'Picked ad frame hidden');
+ assert.equal(opened.length,0);assert.deepEqual(Object.keys(hits).filter(k=>k.startsWith('partner.example')),[]);await pickPage.close();
  assert.deepEqual(errors,[]);
- const result={passed:true,engine:'Chromium MV3 (Safari manifest adapted only for service worker)',checks:[`${report.totals.compiledRules.toLocaleString()} static rules in ${Object.keys(report.lists).length} rulesets registered`,'network request blocked before reaching server','cosmetic hide','allowlist create/remove','global pause','custom validation/save','draft retention','element picker save','320px reflow','light/dark','reduced motion','weather.com stand-in: AdGuard hiding, EasyList blocks kept, list toggle'],safariDeviceTested:false};
+ const result={passed:true,engine:'Chromium MV3 (Safari manifest adapted only for service worker)',checks:[`${report.totals.compiledRules.toLocaleString()} static rules in ${Object.keys(report.lists).length} rulesets registered`,'network request blocked before reaching server','cosmetic hide','allowlist create/remove','global pause','custom validation/save','draft retention','element picker save','320px reflow','light/dark','reduced motion','weather.com stand-in: AdGuard hiding, EasyList blocks kept, list toggle','picker selects ad frames and links without opening them'],safariDeviceTested:false};
  await fs.writeFile(path.join(evidence,'browser-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
 }finally{await context?.close();server.close();await fs.rm(scratch,{recursive:true,force:true});}

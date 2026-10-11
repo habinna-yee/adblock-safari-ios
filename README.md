@@ -22,7 +22,7 @@ Do not enable automatic signing or upload an archive without selecting your own 
 | Ad-space removal | Standard CSS element-hiding rules and cosmetic exceptions |
 | Site controls | Pause on a hostname and its subdomains; explicit reload action |
 | Custom rules | Validated ABP-style URL patterns and standard CSS selectors |
-| Element picker | Tap an element, optionally select its parent, then confirm Hide element; edit/remove its rule in My filters |
+| Element picker | Tap an element, optionally select its parent, then confirm Hide element; edit/remove its rule in My filters. While picking, taps reach only Harbor, so ads and links never open; an ad inside a frame is picked as its frame |
 | Cookie preferences | Enabled by default per the requested feature: necessary and functional/preferences categories on, analytics/performance/advertising and other recognized optional categories off |
 | Storage | Device-local preferences, allowlist, custom rules; no account, analytics or browsing-history log |
 | Filter updates | Bundled with app releases; developer updater below. No in-app subscriptions or scheduled downloads in this version |
