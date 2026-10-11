@@ -7,163 +7,163 @@ TAP version 13
     # Subtest: initializes bundled lists and default state
     ok 1 - initializes bundled lists and default state
       ---
-      duration_ms: 3.704819
+      duration_ms: 3.816363
       type: 'test'
       ...
     # Subtest: allowlist create/read/delete persists and installs site exceptions
     ok 2 - allowlist create/read/delete persists and installs site exceptions
       ---
-      duration_ms: 3.128922
+      duration_ms: 3.375438
       type: 'test'
       ...
     # Subtest: custom rule edits and removal update the actual dynamic set
     ok 3 - custom rule edits and removal update the actual dynamic set
       ---
-      duration_ms: 1.342959
+      duration_ms: 1.598854
       type: 'test'
       ...
     # Subtest: stale editor fails without overwriting new settings
     ok 4 - stale editor fails without overwriting new settings
       ---
-      duration_ms: 1.004516
+      duration_ms: 0.994854
       type: 'test'
       ...
     # Subtest: storage failure rolls back both dynamic rules and enabled lists
     ok 5 - storage failure rolls back both dynamic rules and enabled lists
       ---
-      duration_ms: 0.955493
+      duration_ms: 1.113784
       type: 'test'
       ...
     # Subtest: partial Safari failure restores the committed configuration
     ok 6 - partial Safari failure restores the committed configuration
       ---
-      duration_ms: 1.937209
+      duration_ms: 2.623352
       type: 'test'
       ...
     # Subtest: invalid filters preserve prior persisted data
     ok 7 - invalid filters preserve prior persisted data
       ---
-      duration_ms: 0.712122
+      duration_ms: 0.730663
       type: 'test'
       ...
     # Subtest: closed tabs do not misreport a successful save
     ok 8 - closed tabs do not misreport a successful save
       ---
-      duration_ms: 0.532635
+      duration_ms: 0.588719
       type: 'test'
       ...
     # Subtest: cookie automation obeys global, per-site and independent pause
     ok 9 - cookie automation obeys global, per-site and independent pause
       ---
-      duration_ms: 3.887974
+      duration_ms: 4.083298
       type: 'test'
       ...
     # Subtest: content scripts cannot rewrite settings or spoof picker hostname
     ok 10 - content scripts cannot rewrite settings or spoof picker hostname
       ---
-      duration_ms: 0.503875
+      duration_ms: 0.522035
       type: 'test'
       ...
     # Subtest: picker writes only a scoped CSS rule on the sender site
     ok 11 - picker writes only a scoped CSS rule on the sender site
       ---
-      duration_ms: 0.722954
+      duration_ms: 1.512922
       type: 'test'
       ...
     1..11
 ok 1 - settings transaction, revision, rollback and permission boundary
   ---
-  duration_ms: 21.535795
+  duration_ms: 23.920596
   type: 'test'
   ...
 # Subtest: rule IDs remain distinct at maximum allowlist size
 ok 2 - rule IDs remain distinct at maximum allowlist size
   ---
-  duration_ms: 1.280154
+  duration_ms: 1.385681
   type: 'test'
   ...
 # Subtest: domain normalization rejects URLs, ports and injection
 ok 3 - domain normalization rejects URLs, ports and injection
   ---
-  duration_ms: 2.116857
+  duration_ms: 1.851348
   type: 'test'
   ...
 # Subtest: network rules preserve exclusions and resource scope
 ok 4 - network rules preserve exclusions and resource scope
   ---
-  duration_ms: 3.992474
+  duration_ms: 4.015313
   type: 'test'
   ...
 # Subtest: Safari-incompatible site scopes are rejected, not broadened
 ok 5 - Safari-incompatible site scopes are rejected, not broadened
   ---
-  duration_ms: 0.847541
+  duration_ms: 0.876463
   type: 'test'
   ...
 # Subtest: allow rules outrank blocks; main-frame navigation excluded by default
 ok 6 - allow rules outrank blocks; main-frame navigation excluded by default
   ---
-  duration_ms: 0.287008
+  duration_ms: 0.274067
   type: 'test'
   ...
 # Subtest: unsupported options never broaden a rule
 ok 7 - unsupported options never broaden a rule
   ---
-  duration_ms: 1.434832
+  duration_ms: 1.332889
   type: 'test'
   ...
 # Subtest: badfilter cancels the exact corresponding rule
 ok 8 - badfilter cancels the exact corresponding rule
   ---
-  duration_ms: 0.376305
+  duration_ms: 0.407231
   type: 'test'
   ...
 # Subtest: cosmetic exceptions and domain boundaries
 ok 9 - cosmetic exceptions and domain boundaries
   ---
-  duration_ms: 0.756782
+  duration_ms: 0.645056
   type: 'test'
   ...
 # Subtest: domain compaction preserves separate actions and scopes
 ok 10 - domain compaction preserves separate actions and scopes
   ---
-  duration_ms: 0.579501
+  duration_ms: 0.559854
   type: 'test'
   ...
 # Subtest: strict import is all-or-nothing and reports original line
 ok 11 - strict import is all-or-nothing and reports original line
   ---
-  duration_ms: 0.537423
+  duration_ms: 0.507884
   type: 'test'
   ...
 # Subtest: element-hiding exceptions turn off generic, site-specific or all cosmetic filters on a site
 ok 12 - element-hiding exceptions turn off generic, site-specific or all cosmetic filters on a site
   ---
-  duration_ms: 0.973967
+  duration_ms: 0.955828
   type: 'test'
   ...
 # Subtest: exceptions apply to their own tier and later tiers only
 ok 13 - exceptions apply to their own tier and later tiers only
   ---
-  duration_ms: 0.45972
+  duration_ms: 0.379959
   type: 'test'
   ...
 # Subtest: supplementary lists drop EasyList duplicates and rank below EasyList
 ok 14 - supplementary lists drop EasyList duplicates and rank below EasyList
   ---
-  duration_ms: 5.496223
+  duration_ms: 6.245134
   type: 'test'
   ...
 # Subtest: Safari rule count expands grouped domains, and the build refuses lists Safari would reject
 ok 15 - Safari rule count expands grouped domains, and the build refuses lists Safari would reject
   ---
-  duration_ms: 713.840924
+  duration_ms: 729.739559
   type: 'test'
   ...
 # Subtest: lists added by an update start enabled and keep earlier choices
 ok 16 - lists added by an update start enabled and keep earlier choices
   ---
-  duration_ms: 4.326885
+  duration_ms: 6.369452
   type: 'test'
   ...
 1..16
@@ -174,4 +174,4 @@ ok 16 - lists added by an update start enabled and keep earlier choices
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 867.165457
+# duration_ms 889.221613

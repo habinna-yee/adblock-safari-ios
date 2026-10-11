@@ -23,6 +23,7 @@ Do not enable automatic signing or upload an archive without selecting your own 
 | Site controls | Pause on a hostname and its subdomains; explicit reload action |
 | Custom rules | Validated ABP-style URL patterns and standard CSS selectors |
 | Element picker | Tap an element, optionally select its parent, then confirm Hide element; edit/remove its rule in My filters. While picking, taps reach only Harbor, so ads and links never open; an ad inside a frame is picked as its frame |
+| Pop-up protection | Invisible elements that cover most of the screen let taps through, so a hidden ad frame cannot catch them; the change is undone if the element becomes visible. Within five seconds of a tap on plain page content, `window.open()` returns a window that does nothing, so tap-anywhere pop-ups do not open and the page is not redirected. Taps on links, buttons and other controls are unaffected, so pop-up scripts that fire on those taps, or open windows without `window.open()`, still get through. Off where Harbor is paused. The `window.open()` check needs Safari 18 or later |
 | Cookie preferences | Enabled by default per the requested feature: necessary and functional/preferences categories on, analytics/performance/advertising and other recognized optional categories off |
 | Storage | Device-local preferences, allowlist, custom rules; no account, analytics or browsing-history log |
 | Filter updates | Bundled with app releases; developer updater below. No in-app subscriptions or scheduled downloads in this version |

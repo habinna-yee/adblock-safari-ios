@@ -4,6 +4,34 @@
   // While the picker runs, every tap lands on its cover. Listening here, from document_start and so normally before
   // page scripts, keeps picker input from page and ad listeners, which could otherwise open ads or popunders.
   if(window===window.top) for(const type of ['pointerdown','pointerup','mousedown','mouseup','touchstart','touchend','click','dblclick','auxclick','contextmenu']) window.addEventListener(type,event=>pickerInput?.(event),{capture:true,passive:true});
+  // An invisible element covering most of the screen only exists to catch taps meant for the page, usually to open
+  // an ad, so taps pass through it. Checked as the page changes and before each tap; undone once it becomes visible.
+  let shieldOn=true, shieldTimer=0;
+  const shielded=new Map();
+  const opacity=el=>{let value=1;for(let node=el;node instanceof Element&&value>0.05;node=node.parentElement??node.getRootNode().host)value*=Number(getComputedStyle(node).opacity);return value;};
+  function shield() {
+    clearTimeout(shieldTimer);shieldTimer=0;
+    for(const [el,[value,priority]] of shielded) if(!shieldOn||!el.isConnected||opacity(el)>0.05) {
+      if(value)el.style.setProperty('pointer-events',value,priority);else el.style.removeProperty('pointer-events');
+      shielded.delete(el);
+    }
+    if(!shieldOn)return;
+    const width=innerWidth,height=innerHeight;
+    for(const [x,y] of [[.5,.5],[.2,.2],[.8,.2],[.2,.8],[.8,.8]]) for(let layer=0;layer<5;layer++) {
+      const el=document.elementFromPoint(x*width,y*height);
+      if(!el||el===document.documentElement||el===document.body)break;
+      const rect=el.getBoundingClientRect();
+      if(rect.width<width/2||rect.height<height/2||opacity(el)>0.05)break;
+      shielded.set(el,[el.style.getPropertyValue('pointer-events'),el.style.getPropertyPriority('pointer-events')]);
+      el.style.setProperty('pointer-events','none','important');
+    }
+  }
+  if(window===window.top) {
+    const later=()=>{if(!shieldTimer)shieldTimer=setTimeout(shield,200);};
+    new MutationObserver(later).observe(document,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class','hidden']});
+    for(const type of ['pointerdown','touchstart','mousedown'])window.addEventListener(type,shield,{capture:true,passive:true});
+    for(const type of ['transitionend','animationend','load','resize'])window.addEventListener(type,later,true);
+  }
   async function refresh() {
     const current=++generation;
     try {
@@ -11,6 +39,9 @@
       if(current!==generation) return;
       if(!reply?.ok) return;
       globalThis.HarborConsent?.configure(!!reply.data.consent);
+      // Pop-up protection follows Protection and site pauses: popup-guard.js runs in the page's own world.
+      window.dispatchEvent(new Event(reply.data.enabled?'harbor:popups-blocked':'harbor:popups-allowed'));
+      if(window===window.top){shieldOn=!!reply.data.enabled;shield();}
       sheetHost?.remove(); sheetHost=null;
       if(!reply.data.enabled || !reply.data.selectors.length) return;
       const style=document.createElement('style');
