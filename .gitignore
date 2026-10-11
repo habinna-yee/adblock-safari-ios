@@ -1,1 +1,9 @@
-buil/work/
+.DS_Store
+DerivedData/
+build/
+node_modules/
+*.xcuserstate
+xcuserdata/
+*.zip
+# Old nested layout and local test-browser downloads (buil/work) from before the move.
+buil/
