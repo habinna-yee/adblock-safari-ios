@@ -77,10 +77,15 @@
     };
     shadow.getElementById('cancel').focus();
   }
-  api.runtime.onMessage.addListener(message=>{
-    if(message.type==='pageStatus')return Promise.resolve({consent:globalThis.HarborConsent?.status()??'Unavailable'});
-    if(message.type==='refresh'){void refresh();return Promise.resolve({ok:true});}
-    if(message.type==='pick'){pick();return Promise.resolve({ok:true});}
+  api.runtime.onMessage.addListener((message,_sender,sendResponse)=>{
+    let response;
+    if(message.type==='pageStatus')response={consent:globalThis.HarborConsent?.status()??'Unavailable'};
+    if(message.type==='refresh'){void refresh();response={ok:true};}
+    if(message.type==='pick'){pick();response={ok:true};}
+    if(response===undefined)return;
+    // sendResponse works in every browser; Chromium (tested on 141) ignores a returned Promise.
+    if(typeof sendResponse==='function'){sendResponse(response);return;}
+    return Promise.resolve(response);
   });
   if(document.documentElement) void refresh(); else document.addEventListener('DOMContentLoaded',refresh,{once:true});
 })();

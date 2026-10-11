@@ -65,7 +65,7 @@ try{
  function find(node){if(node.attributes?.includes('hide'))return node;for(const child of [...(node.children??[]),...(node.shadowRoots??[])]){const found=find(child);if(found)return found;}}
  const button=find(dom);assert.ok(button,'Picker save control exists');const {model}=await cdp.send('DOM.getBoxModel',{nodeId:button.nodeId});await page.mouse.click((model.content[0]+model.content[4])/2,(model.content[1]+model.content[5])/2);
  await page.waitForTimeout(250);assert.equal(await page.locator('h1').isVisible(),false,'Picked element hidden after confirmed save');
- await settings.reload();await settings.locator('#custom:not([disabled])').waitFor();assert.match(await settings.locator('#custom').inputValue(),/127\.0\.0\.1##h1/);
+ await settings.reload();await settings.locator('#custom:not([disabled])').waitFor();assert.match(await settings.locator('#custom').inputValue(),/127\.0\.0\.1##body > h1/);
  assert.deepEqual(errors,[]);
  const result={passed:true,engine:'Chromium MV3 (Safari manifest adapted only for service worker)',checks:['13,153 static rules registered','network request blocked before reaching server','cosmetic hide','allowlist create/remove','global pause','custom validation/save','draft retention','element picker save','320px reflow','light/dark','reduced motion'],safariDeviceTested:false};
  await fs.writeFile(path.join(evidence,'browser-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

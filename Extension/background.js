@@ -84,10 +84,14 @@ async function dispatch(message,sender) {
   if (message.type === 'save') return {settings:await save(message.settings,message.revision)};
   throw Error('Unknown action.');
 }
-api.runtime.onMessage.addListener((message,sender)=>{
+api.runtime.onMessage.addListener((message,sender,sendResponse)=>{
   const task = queue.then(()=>dispatch(message,sender));
   queue = task.catch(()=>{});
-  return task.then(data=>({ok:true,data}),error=>({ok:false,error:error.message}));
+  const reply = task.then(data=>({ok:true,data}),error=>({ok:false,error:error.message}));
+  // Chromium (tested on 141) ignores a returned Promise, so answer through sendResponse and keep the channel open.
+  if (typeof sendResponse !== 'function') return reply;
+  reply.then(sendResponse);
+  return true;
 });
 function wake() {const task=queue.then(initialize); queue=task.catch(()=>{ready=false;});}
 api.runtime.onInstalled.addListener(wake);

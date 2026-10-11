@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "engine": "Chromium MV3 (Safari manifest adapted only for service worker)",
+  "checks": [
+    "13,153 static rules registered",
+    "network request blocked before reaching server",
+    "cosmetic hide",
+    "allowlist create/remove",
+    "global pause",
+    "custom validation/save",
+    "draft retention",
+    "element picker save",
+    "320px reflow",
+    "light/dark",
+    "reduced motion"
+  ],
+  "safariDeviceTested": false
+}
