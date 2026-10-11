@@ -1,23 +1,59 @@
 {
-  "builtAt": "2026-10-11T18:50:13.506Z",
+  "builtAt": "2026-10-11T20:29:48.463Z",
   "lists": {
     "easylist": {
+      "name": "EasyList",
       "source": "https://easylist.to/easylist/easylist.txt",
       "sha256": "2b4bc77da2a7913ad6ed02a452bc35f6c8cc37ca4d902949084a5094923d2e3b",
       "version": "202610111827",
       "networkFilters": 52827,
       "compiledRules": 3891,
-      "cosmeticFilters": 24030,
-      "skipped": 4382
+      "safariRules": 52819,
+      "cosmeticFilters": 24187,
+      "skipped": 4225
     },
     "easyprivacy": {
+      "name": "EasyPrivacy",
       "source": "https://easylist.to/easylist/easyprivacy.txt",
       "sha256": "8d6ccf8cf422ea7c6c75fcc873808fb4595ed6a883cc85a7b751209f91d95bec",
       "version": "202610111827",
       "networkFilters": 56225,
       "compiledRules": 9262,
+      "safariRules": 56224,
       "cosmeticFilters": 2,
       "skipped": 82
+    },
+    "adguard-base": {
+      "name": "AdGuard Base",
+      "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/platforms/extension/safari/filters/2.txt",
+      "sha256": "f6905084f30a2cf7225aba313988d9da0b1dad4d2bc1680b59b09accabe3d766",
+      "version": "2.4.96.60",
+      "supplements": "easylist",
+      "duplicatesRemoved": 77788,
+      "networkFilters": 21465,
+      "compiledRules": 9868,
+      "safariRules": 21438,
+      "cosmeticFilters": 24340,
+      "skipped": 15343
+    },
+    "adguard-mobile": {
+      "name": "AdGuard Mobile Ads",
+      "source": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/platforms/extension/safari/filters/11.txt",
+      "sha256": "62aac36c0ffaa576ff5c1288a1189d12756a62ec583c468cd36f2ee0f301f291",
+      "version": "2.0.72.63",
+      "supplements": "easylist",
+      "duplicatesRemoved": 33,
+      "networkFilters": 1500,
+      "compiledRules": 556,
+      "safariRules": 1500,
+      "cosmeticFilters": 5272,
+      "skipped": 1147
     }
+  },
+  "totals": {
+    "compiledRules": 23577,
+    "safariRules": 131981,
+    "safariLimit": 150000,
+    "dynamicReserve": 4500
   }
 }

@@ -18,7 +18,7 @@ Do not enable automatic signing or upload an archive without selecting your own 
 
 | Feature | Implementation |
 |---|---|
-| Ads and trackers | Packaged EasyList and EasyPrivacy subset; browser-native declarative network rules |
+| Ads and trackers | Packaged EasyList, AdGuard Base, AdGuard Mobile Ads and EasyPrivacy subsets, each with its own switch; browser-native declarative network rules |
 | Ad-space removal | Standard CSS element-hiding rules and cosmetic exceptions |
 | Site controls | Pause on a hostname and its subdomains; explicit reload action |
 | Custom rules | Validated ABP-style URL patterns and standard CSS selectors |
@@ -39,7 +39,20 @@ Global pause and site exceptions pause cookie automation too. Turn off only **Ne
 
 ### Bundled rules
 
-The October 11, 2026 snapshots compile to **13,153 network rules** representing **109,052 supported network filters**, plus **24,032 cosmetic filters**. Equivalent pure-domain filters are grouped into domain arrays without changing action or scope. **4,464 unsupported source lines** are reported, never silently stripped of their options and converted to a broader block. Some standard CSS selectors may still be unsupported by the installed Safari version; those individual selectors are skipped at application time.
+The October 11, 2026 snapshots compile to **23,577 network rules** and **53,801 element filters**:
+
+| List | Network filters | Network rules | After Safari conversion | Element filters | Skipped lines |
+|---|---:|---:|---:|---:|---:|
+| EasyList | 52,827 | 3,891 | 52,819 | 24,187 | 4,225 |
+| AdGuard Base (beyond EasyList) | 21,465 | 9,868 | 21,438 | 24,340 | 15,343 |
+| AdGuard Mobile Ads (beyond EasyList) | 1,500 | 556 | 1,500 | 5,272 | 1,147 |
+| EasyPrivacy | 56,225 | 9,262 | 56,224 | 2 | 82 |
+
+Equivalent pure-domain filters are grouped into domain arrays without changing action or scope. Lines Harbor cannot convert are reported, never silently stripped of their options and converted to a broader block; most are scriptlets and procedural filters that need script injection. Some standard CSS selectors may still be unsupported by the installed Safari version; those individual selectors are skipped at application time.
+
+**Safari's rule limit.** Safari converts every enabled rule into one WebKit content-blocker list, and each grouped domain becomes its own rule. Above 150,000 rules Safari rejects the whole list and blocks nothing, without telling the user. All four lists convert to **131,981**, leaving room for the 4,500 dynamic rules that custom filters and allowed sites can use. The filter build and `npm run check` fail if an update would exceed the limit.
+
+**AdGuard lists supplement EasyList.** Harbor bundles AdGuard's Safari builds. AdGuard Base already contains EasyList, so rules identical to EasyList's are dropped (77,788 for AdGuard Base). AdGuard network rules rank below EasyList's, so an AdGuard exception never unblocks a request EasyList blocks; for example, AdGuard's `@@||amazon-adsystem.com^$domain=weather.com` does not let Amazon ads load on weather.com. Element-hiding exceptions from every list apply to all lists, as in other blockers, so pages that generic filters would break stay usable.
 
 Exact source versions, SHA-256 hashes, compiled counts and build time: `Extension/rules/report.json`. Rejected source line numbers and reasons: `vendor/*-skipped.json`. The original lists retain their upstream comments and attribution.
 
@@ -51,13 +64,15 @@ Supported examples:
 ! Lines beginning with ! are comments
 ||ads.example.com^
 ||tracker.example.com^$script,third-party
-||ads.example.com^$domain=news.example|~safe.news.example
+||ads.example.com^$domain=news.example
+||ads.example.com^$domain=~safe.news.example
 @@||cdn.example.com/needed.js
 news.example.com##.sponsored
 news.example.com#@#.allowed-ad
+@@||forum.example^$generichide
 ```
 
-URL filters support ABP anchors/wildcards/separators, resource types (script, image, stylesheet, font, media, subdocument, xmlhttprequest, ping, websocket, other), negated resource types, third-party/~third-party, domain inclusion/exclusion, match-case, and network exceptions. Default rules exclude top-level navigation. `$document`, regex filters, redirects, important, removeparam, generichide and procedural/script filters are rejected. Use the site allowlist for document exceptions. Limits: 200 allowed hosts, 200,000 custom-filter characters, 4,500 total dynamic rules. Imported unknown syntax causes the entire save to fail with its line number.
+URL filters support ABP anchors/wildcards/separators, resource types (script, image, stylesheet, font, media, subdocument, xmlhttprequest, ping, websocket, other), negated resource types, `$all` (every type above), third-party/~third-party, domain inclusion or exclusion, match-case, and network exceptions. One filter cannot both include and exclude sites, because Safari would ignore the exclusions; write two filters instead. Default rules exclude top-level navigation. Element-hiding exceptions turn cosmetic filters off on a site: `$generichide` for generic filters, `$specifichide` for site-specific ones and `$elemhide` for both, written as `@@||site.example^$generichide` or `@@$generichide,domain=site.example`. `$document`, regex filters, `||*` patterns, redirects, important, removeparam and procedural/script filters are rejected. Use the site allowlist for document exceptions. Limits: 200 allowed hosts, 200,000 custom-filter characters, 4,500 total dynamic rules. Imported unknown syntax causes the entire save to fail with its line number.
 
 The background is the single serialized writer. Browser rule changes are applied before storage commits; failures roll back to committed state. Revision checks prevent stale editors from silently overwriting other changes. On restart, the background reconciles rules from committed preferences. Cosmetic changes broadcast to open pages; network changes affect new requests, so reload is explicit.
 
@@ -69,11 +84,11 @@ No production npm dependencies. Node 20+ and Python 3 generate/check assets and 
 npm test
 npm run check
 node scripts/build-filters.mjs       # rebuild from checked-in snapshots, offline
-node scripts/update-filters.mjs      # download EasyList/EasyPrivacy over HTTPS and rebuild
+node scripts/update-filters.mjs      # download every list over HTTPS and rebuild
 python3 scripts/generate-project.py # deterministic Xcode project; resets signing identifiers
 ```
 
-After updating filters, review skipped-rule reports, run checks, build, and complete the device matrix before shipping. The updater fetches text data only; it does not download or execute code. Browser storage is bounded and no filter source is fetched during normal browsing.
+List sources and how they combine are defined in `scripts/lists.mjs`; AdGuard's Safari builds are read from AdGuard's FiltersRegistry on GitHub. The updater builds in memory first and keeps the bundled lists if the new ones would exceed Safari's or Chromium's rule limits. After updating filters, review skipped-rule reports, run checks, build, and complete the device matrix before shipping. The updater fetches text data only; it does not download or execute code. Browser storage is bounded and no filter source is fetched during normal browsing.
 
 To run the real Chromium extension test on a host that permits launching browsers, install Playwright as a development tool, run `npx playwright install chromium`, then `node tests/browser.mjs`. The harness adapts only the background manifest to a Chromium service worker. A Chromium pass is **not** Safari acceptance.
 
@@ -90,7 +105,7 @@ For UI and consent fixtures: `node tests/preview-server.mjs`, then open `http://
 
 Harbor stores its configuration in Safari's local extension storage. It does not send browsing URLs or settings to a service. Pages receive their normal consent selections when automation saves preferences. Native messaging has no privileged actions. Removing the app/extension removes its local settings. Export/backup is not implemented.
 
-Harbor source is provided under GPL-3.0-or-later; see LICENSE. EasyList and EasyPrivacy © their contributors are distributed under their GPLv3 option; upstream also offers CC BY-SA 3.0. The source snapshots and conversion reports are included to make this derivative inspectable. The icon is an original programmatically drawn asset. No Consent-O-Matic implementation code is bundled; its public rules were consulted as compatibility references.
+Harbor source is provided under GPL-3.0-or-later; see LICENSE. EasyList and EasyPrivacy © their contributors are distributed under their GPLv3 option; upstream also offers CC BY-SA 3.0. AdGuard Base and AdGuard Mobile Ads © their contributors are distributed under GPLv3. The source snapshots and conversion reports are included to make this derivative inspectable. The icon is an original programmatically drawn asset. No Consent-O-Matic implementation code is bundled; its public rules were consulted as compatibility references.
 
 ## Technical references
 
@@ -98,4 +113,6 @@ Harbor source is provided under GPL-3.0-or-later; see LICENSE. EasyList and Easy
 - [Apple: Safari extension compatibility](https://developer.apple.com/documentation/safariservices/assessing-your-safari-web-extension-s-browser-compatibility)
 - [MDN compatibility data: declarativeNetRequest](https://github.com/mdn/browser-compat-data/blob/main/webextensions/api/declarativeNetRequest.json) — legacy `domains`/`excludedDomains` are used for Safari 16.4 compatibility; `initiatorDomains` arrived in Safari 26.
 - [EasyList license](https://easylist.to/pages/licence.html)
+- [AdGuard filters license](https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE) and [AdGuard FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
+- WebKit's rule conversion and limit: [`_WKWebExtensionDeclarativeNetRequestRule.mm`](https://github.com/WebKit/WebKit/blob/main/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.mm) (one rule per request domain; excluded domains dropped when domains are also set) and [`ContentExtensionParser.cpp`](https://github.com/WebKit/WebKit/blob/main/Source/WebCore/contentextensions/ContentExtensionParser.cpp) (150,000-rule maximum)
 - [Consent-O-Matic provider-rule references](https://github.com/cavi-au/Consent-O-Matic/tree/master/rules)

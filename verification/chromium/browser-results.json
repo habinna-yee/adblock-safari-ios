@@ -2,7 +2,7 @@
   "passed": true,
   "engine": "Chromium MV3 (Safari manifest adapted only for service worker)",
   "checks": [
-    "13,153 static rules registered",
+    "23,577 static rules in 4 rulesets registered",
     "network request blocked before reaching server",
     "cosmetic hide",
     "allowlist create/remove",
@@ -12,7 +12,8 @@
     "element picker save",
     "320px reflow",
     "light/dark",
-    "reduced motion"
+    "reduced motion",
+    "weather.com stand-in: AdGuard hiding, EasyList blocks kept, list toggle"
   ],
   "safariDeviceTested": false
 }

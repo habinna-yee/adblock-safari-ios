@@ -1,7 +1,7 @@
 import {compile, normalizeHost, matchesHost, selectorsFor, safeSelector} from './compiler.js';
 const api = globalThis.browser ?? globalThis.chrome;
-const LISTS = ['easylist','easyprivacy'];
-export const DEFAULT = {schema:1,revision:0,enabled:true,lists:{easylist:true,easyprivacy:true},cosmetic:true,consent:true,allowlist:[],custom:''};
+const LISTS = ['easylist','adguard-base','adguard-mobile','easyprivacy'];
+export const DEFAULT = {schema:1,revision:0,enabled:true,lists:Object.fromEntries(LISTS.map(id=>[id,true])),cosmetic:true,consent:true,allowlist:[],custom:''};
 let queue = Promise.resolve(), ready = false;
 const cache = new Map();
 async function asset(path) {
@@ -10,10 +10,10 @@ async function asset(path) {
 }
 async function read() { return (await api.storage.local.get('settings')).settings ?? structuredClone(DEFAULT); }
 function validate(value) {
-  if (!value || typeof value.enabled !== 'boolean' || typeof value.cosmetic !== 'boolean' || !LISTS.every(id=>typeof value.lists?.[id] === 'boolean')) throw Error('Invalid settings. Reload and try again.');
+  if (!value || typeof value.enabled !== 'boolean' || typeof value.cosmetic !== 'boolean' || typeof value.lists !== 'object' || !value.lists || !LISTS.every(id=>[undefined,true,false].includes(value.lists[id]))) throw Error('Invalid settings. Reload and try again.');
   if (!Array.isArray(value.allowlist) || value.allowlist.length > 200) throw Error('Use no more than 200 allowed sites.');
   if (typeof value.custom !== 'string' || value.custom.length > 200000) throw Error('Custom filters must be under 200,000 characters.');
-  return {schema:1,revision:Number.isInteger(value.revision)?value.revision:0,enabled:value.enabled,cosmetic:value.cosmetic,consent:value.consent !== false,lists:Object.fromEntries(LISTS.map(id=>[id,value.lists[id]])),allowlist:[...new Set(value.allowlist.map(normalizeHost))].sort(),custom:value.custom};
+  return {schema:1,revision:Number.isInteger(value.revision)?value.revision:0,enabled:value.enabled,cosmetic:value.cosmetic,consent:value.consent !== false,lists:Object.fromEntries(LISTS.map(id=>[id,value.lists[id] ?? DEFAULT.lists[id]])),allowlist:[...new Set(value.allowlist.map(normalizeHost))].sort(),custom:value.custom};
 }
 export function dynamicRules(settings) {
   const rules = compile(settings.custom,{strict:true,startID:1000}).network;
@@ -35,9 +35,11 @@ async function apply(settings) {
 async function initialize() {
   if (ready) return;
   // The committed settings are authoritative. A stopped background can recover any interrupted save.
-  const settings = validate(await read());
+  const stored = (await api.storage.local.get('settings')).settings;
+  const settings = validate(stored ?? structuredClone(DEFAULT));
   await apply(settings);
-  if (!(await api.storage.local.get('settings')).settings) await api.storage.local.set({settings});
+  // Lists added by an update start enabled; store them so every editor sees the same settings.
+  if (JSON.stringify(stored) !== JSON.stringify(settings)) await api.storage.local.set({settings});
   ready = true;
 }
 async function save(next, expected) {

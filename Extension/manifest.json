@@ -53,6 +53,16 @@
         "id": "easyprivacy",
         "enabled": true,
         "path": "rules/easyprivacy.json"
+      },
+      {
+        "id": "adguard-base",
+        "enabled": true,
+        "path": "rules/adguard-base.json"
+      },
+      {
+        "id": "adguard-mobile",
+        "enabled": true,
+        "path": "rules/adguard-mobile.json"
       }
     ]
   },

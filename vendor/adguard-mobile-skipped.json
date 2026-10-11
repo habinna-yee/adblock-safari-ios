@@ -1,0 +1,4590 @@
+[
+  {
+    "line": 119,
+    "reason": "Unsupported option: /."
+  },
+  {
+    "line": 121,
+    "reason": "Unsupported option: /."
+  },
+  {
+    "line": 175,
+    "reason": "Start with || and a domain, such as ||example.com^, not ||*."
+  },
+  {
+    "line": 1035,
+    "reason": "Unsupported option: popup."
+  },
+  {
+    "line": 1088,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1092,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1096,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1100,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1101,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1102,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1105,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1106,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1113,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1117,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1120,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1124,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1125,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1192,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1193,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1194,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1195,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1196,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1197,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1200,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1201,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1202,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1203,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1206,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1207,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1208,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1209,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1210,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1215,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1216,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1219,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1224,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1225,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1226,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1227,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1230,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 1231,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1316,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1317,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1318,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1320,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1322,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1324,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1326,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1328,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1330,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1332,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1334,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1336,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1338,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1340,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1342,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1344,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1346,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1349,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1352,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1354,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1356,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1357,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1359,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1361,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1364,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1365,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1366,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1368,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1370,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1372,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1374,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1377,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1378,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1380,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1382,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1384,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1386,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1388,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1390,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1392,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1394,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1396,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1397,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1398,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1400,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1402,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1405,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1407,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1409,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1411,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1413,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1415,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1416,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1417,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1419,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1421,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1423,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1425,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1427,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1429,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1431,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1433,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1435,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1437,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1439,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1441,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1442,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1444,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1446,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1448,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1455,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1457,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1459,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1461,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1463,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1464,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1467,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1469,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1470,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1472,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1474,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1476,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1478,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1479,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1480,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1482,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1483,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1485,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1486,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1488,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1490,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1492,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1494,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1496,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1498,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1500,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1502,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1504,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1506,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1507,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1509,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1511,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1513,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1514,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1516,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1518,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1520,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1522,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1524,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1525,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1527,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1529,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1531,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1533,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1535,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1537,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1538,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1540,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1542,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1544,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1546,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1548,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1550,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1552,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1553,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1555,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1556,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1558,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1560,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1562,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1563,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1565,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1567,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1568,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1569,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1571,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1572,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1573,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1575,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1576,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1578,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1580,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1581,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1583,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1585,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1587,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1589,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1591,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1592,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1593,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1595,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1597,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1599,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1602,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1603,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1605,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1607,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1609,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1611,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1612,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1614,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1615,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1617,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1619,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1621,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1622,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1624,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1626,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1628,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1630,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1632,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1635,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1638,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1639,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1641,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1643,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1645,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1646,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1648,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1650,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1652,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1654,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1656,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1658,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1660,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1661,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1663,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1665,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1666,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1668,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1670,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1671,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1673,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1675,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1676,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1677,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1679,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1681,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1682,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1684,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1685,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1687,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1688,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1690,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1692,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1693,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1695,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1696,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1697,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1698,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1699,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1700,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1701,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1703,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1705,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1706,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1708,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1709,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1711,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1712,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1714,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1716,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1718,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1720,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1722,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1723,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1725,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1727,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1729,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1730,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1732,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1733,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1735,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1738,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1739,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1741,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1743,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1744,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1746,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1748,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1749,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1751,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1753,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1756,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1758,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1759,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1761,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1762,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1764,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1766,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1768,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1770,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1772,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1774,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1776,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1778,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1779,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1781,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1782,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1783,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1785,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1786,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1788,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1790,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1791,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1793,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1794,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1795,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1797,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1798,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1800,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1802,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1803,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1804,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1806,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1808,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1809,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1811,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1813,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1814,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1815,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1817,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1818,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1820,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1822,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1824,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1825,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1827,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1829,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1831,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1833,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1835,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1837,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1839,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1841,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1843,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1845,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1847,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 1894,
+    "reason": "Unsupported option: popup."
+  },
+  {
+    "line": 2073,
+    "reason": "Document filters are not supported; use the site allowlist."
+  },
+  {
+    "line": 2103,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2105,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2107,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2108,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2114,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2116,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2117,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2118,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2119,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2120,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2125,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2126,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2132,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2253,
+    "reason": "Document filters are not supported; use the site allowlist."
+  },
+  {
+    "line": 2264,
+    "reason": "Document filters are not supported; use the site allowlist."
+  },
+  {
+    "line": 2411,
+    "reason": "Document filters are not supported; use the site allowlist."
+  },
+  {
+    "line": 2421,
+    "reason": "Document filters are not supported; use the site allowlist."
+  },
+  {
+    "line": 2454,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2455,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2456,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2457,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2458,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2467,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2478,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2503,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2504,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2524,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2525,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2544,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2579,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2589,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2599,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2600,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2601,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2609,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2613,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2615,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2623,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2624,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2625,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2630,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2631,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2632,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2641,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2663,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2670,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2685,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2701,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2707,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2709,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2710,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2711,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2714,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2716,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2743,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2778,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2795,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2796,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2819,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2820,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2821,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2823,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2847,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2864,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2866,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2882,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 2895,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2896,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2899,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2910,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2911,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2912,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2914,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2915,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2916,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2917,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2918,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2922,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2923,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2924,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2926,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2930,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2945,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2952,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2967,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2969,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2970,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2971,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2972,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2973,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 2981,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3000,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3001,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3004,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3006,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3010,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3011,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3012,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3021,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3025,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3026,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3057,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3102,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3137,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3138,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3141,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3171,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3174,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3201,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3207,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3208,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3239,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3266,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3304,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3326,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3327,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3328,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3340,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3353,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3354,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3359,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3360,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3365,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3368,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3375,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3383,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3396,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3397,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3425,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3426,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3427,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3428,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3429,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3430,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3441,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3442,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3446,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3451,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3476,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3477,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3478,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3493,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 3495,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3499,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3511,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3519,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3520,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3521,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3526,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3552,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3556,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3559,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3565,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3569,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3584,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3585,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3586,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3587,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3601,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3613,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3626,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3627,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3634,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3648,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3649,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3652,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3653,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3657,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3662,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3665,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3667,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3698,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3699,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3703,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3704,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3713,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3720,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3745,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3746,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3760,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3763,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3764,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3802,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3817,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3818,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3819,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 3820,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3821,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3822,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3823,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3824,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3826,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3918,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3944,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3967,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3971,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3973,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 3981,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4027,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4031,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4043,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4065,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4066,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4082,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4083,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4094,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4099,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4106,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4113,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4166,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4167,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4170,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4246,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4262,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4268,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4271,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4307,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4308,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4309,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4312,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4316,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4320,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4366,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4371,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4389,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4390,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4395,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4400,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4402,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4409,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4447,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4460,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4474,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4475,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4476,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4484,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4494,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4507,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4508,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4528,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4534,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4538,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4549,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4565,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4578,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4607,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4621,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4629,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4634,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4639,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4645,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4648,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4666,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4675,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4676,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4679,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4685,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4691,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4693,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4697,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4699,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4702,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4708,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4710,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4718,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4723,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4730,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4734,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4736,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4739,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4740,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 4742,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4756,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4758,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4761,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4762,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4765,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4768,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4778,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4779,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4788,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4789,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4796,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4803,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4804,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4810,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4811,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4817,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4829,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4833,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4940,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4941,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4968,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4969,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 4978,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4979,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4981,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4982,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4983,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 4998,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5015,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5016,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5021,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5022,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5024,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5080,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5095,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5194,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5217,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5222,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5228,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5279,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5439,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5510,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5518,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5533,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5538,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5539,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5610,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5611,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5612,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5613,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5614,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5615,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5616,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5627,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5640,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5641,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5645,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5649,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5746,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5762,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5900,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 5990,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5993,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 5994,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6009,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6024,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6055,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6122,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 6340,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6341,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6470,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 6528,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6529,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6530,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6531,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 6598,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 6840,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7060,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 7185,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7290,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 7304,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7348,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7444,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7451,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7492,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 7493,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 7498,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7534,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7648,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 7676,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 7817,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 7851,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8080,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8117,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8118,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8119,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8120,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8121,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8122,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8123,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8124,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8125,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8126,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8127,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8128,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8129,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8130,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8131,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8132,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8133,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8134,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8135,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8136,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8137,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8138,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8139,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8140,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8141,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8142,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8143,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8144,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8145,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8146,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8147,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8148,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8149,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8150,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8151,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8152,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8153,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8154,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8155,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8156,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8157,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8158,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8159,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8160,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8161,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8162,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8164,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8165,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8169,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8170,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8172,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8173,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8174,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8175,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8176,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8177,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8178,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8179,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8180,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8181,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8182,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8183,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8184,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8185,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8186,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8187,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8188,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8189,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8190,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8191,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8192,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8193,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8194,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8195,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8196,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8197,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8198,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8199,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8200,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8201,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8202,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8203,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8204,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8205,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8206,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8207,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8208,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8209,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8210,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8211,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8212,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8213,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8214,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8215,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8216,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8217,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8218,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8219,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8220,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8221,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8222,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8223,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8224,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8225,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8226,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8227,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8228,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8229,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8230,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8231,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8232,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8233,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8234,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8235,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8236,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8237,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8238,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8239,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8240,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8241,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8242,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8243,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8244,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8245,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8246,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8247,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8248,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8249,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8250,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8251,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8252,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8253,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8254,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8255,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8256,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8257,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8258,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8259,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8260,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8261,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8262,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8263,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8264,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8265,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8266,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8267,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8268,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8269,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8271,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8272,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8273,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8274,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8275,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8276,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8277,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8278,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8279,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8280,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8281,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8282,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8283,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8284,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8285,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8286,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8287,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8288,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8289,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8290,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8291,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8292,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8293,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8294,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8295,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8296,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8297,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8298,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8299,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8300,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8301,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8302,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8303,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8304,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8305,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8306,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8308,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8309,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8310,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8311,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8312,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8313,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8314,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8315,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8316,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8317,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8318,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8319,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8320,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8321,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8322,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8323,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8324,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8325,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8326,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8327,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8328,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8329,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8330,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8331,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8332,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8333,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8334,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8335,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8336,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8337,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8338,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8339,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8340,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8341,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8342,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8343,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8344,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8345,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8346,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8347,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8348,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8349,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8350,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8351,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8352,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8353,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8354,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8355,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8356,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8357,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8358,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8359,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8360,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8361,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8362,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8363,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8364,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8365,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8366,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8367,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8368,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8369,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8370,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8371,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8372,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8373,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8374,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8375,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8376,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8377,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8378,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8379,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8380,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8381,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8382,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8383,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8384,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8385,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8386,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8387,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8388,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8390,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8391,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8392,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8393,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8394,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8395,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8397,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8398,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8399,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8400,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8401,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8402,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8403,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8404,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8405,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8406,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8407,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8408,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8409,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8410,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8411,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8412,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8413,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8414,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8415,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8416,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8417,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8418,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8419,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8420,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8421,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8422,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8423,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8424,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8425,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8426,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8427,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8428,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8429,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8430,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8431,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8432,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8433,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8434,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8435,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8436,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8437,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8438,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8439,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8440,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8441,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8442,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8443,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8444,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8445,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8446,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8447,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8448,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8449,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8450,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8451,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8452,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8453,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8454,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8455,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8456,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8457,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8458,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8459,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8460,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8461,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8462,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8463,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8464,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8465,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8466,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8467,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8468,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8469,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8470,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8471,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8472,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8473,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8474,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8475,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8476,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8477,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8478,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8479,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8480,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8481,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8482,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8483,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8484,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8485,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8486,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8487,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8488,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8489,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8490,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8491,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8492,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8493,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8501,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8507,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8530,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8531,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8532,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8533,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8534,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8550,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8557,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8572,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8574,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8575,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8576,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8577,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8582,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8583,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8584,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8587,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8595,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8596,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8597,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8604,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8607,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8612,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8613,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8614,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8615,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8616,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8622,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8627,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8639,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8649,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8650,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8651,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8654,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8665,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8666,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8669,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8670,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8674,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8675,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8676,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8677,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8678,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8679,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8680,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8681,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8682,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8683,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8684,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8685,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8686,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8687,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8688,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8689,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 8712,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8713,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8714,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8719,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8724,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8726,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8727,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8747,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8757,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8762,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8780,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8800,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8810,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8828,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8830,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8831,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 8834,
+    "reason": "Procedural and script filters are not supported."
+  },
+  {
+    "line": 9142,
+    "reason": "Unsupported option: 1<\\/VAST>/."
+  }
+]

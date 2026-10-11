@@ -1,11 +1,12 @@
 import {send,$,status,busy,validateCSS} from './ui.js';
 import {normalizeHost,compile} from './compiler.js';
+const LISTS=['easylist','adguard-base','adguard-mobile','easyprivacy'];
 let settings,report,dirty=false,saving=false;
 function route(){const name=['protection','filters','setup'].includes(location.hash.slice(1))?location.hash.slice(1):'protection';for(const id of ['protection','filters','setup'])$(id).hidden=id!==name;document.querySelectorAll('nav a').forEach(a=>{if(a.hash===`#${name}`)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.title=`Harbor — ${name==='filters'?'My filters':name==='setup'?'Setup':'Protection'}`;}
 window.addEventListener('hashchange',route);route();
 function render(){
   for(const id of ['enabled','cosmetic','consent']){$(id).checked=settings[id];$(id).disabled=false;}
-  for(const id of ['easylist','easyprivacy']){$(id).checked=settings.lists[id];$(id).disabled=false;const entry=report.lists[id];$(id+'-count').textContent=`${entry.networkFilters.toLocaleString()} supported network filters · ${entry.skipped.toLocaleString()} skipped`;}
+  for(const id of LISTS){$(id).checked=settings.lists[id];$(id).disabled=false;const entry=report.lists[id],kind=entry.supplements?`network filters not in ${report.lists[entry.supplements].name}`:'supported network filters';$(id+'-count').textContent=`${entry.networkFilters.toLocaleString()} ${kind} · ${entry.skipped.toLocaleString()} skipped`;}
   $('network-count').textContent=Object.values(report.lists).reduce((a,l)=>a+l.compiledRules,0).toLocaleString();
   $('cosmetic-count').textContent=Object.values(report.lists).reduce((a,l)=>a+l.cosmeticFilters,0).toLocaleString();
   $('version').textContent=`Bundled ${new Intl.DateTimeFormat(undefined,{dateStyle:'medium'}).format(new Date(report.builtAt))}. These are rule counts, not blocked-request statistics.`;
@@ -17,7 +18,7 @@ function render(){
 }
 async function commit(next,message){if(saving)return false;saving=true;busy(true);let success=false;try{settings=(await send({type:'save',settings:next,revision:settings.revision})).settings;status(message);success=true;}catch(e){status(e.message,true);}finally{saving=false;busy(false);render();}return success;}
 for(const id of ['enabled','cosmetic','consent'])$(id).onchange=()=>commit({...settings,[id]:$(id).checked},'Saved. Reload open websites to apply all changes.');
-for(const id of ['easylist','easyprivacy'])$(id).onchange=()=>commit({...settings,lists:{...settings.lists,[id]:$(id).checked}},'Filter list preference saved. Reload open websites.');
+for(const id of LISTS)$(id).onchange=()=>commit({...settings,lists:{...settings.lists,[id]:$(id).checked}},'Filter list preference saved. Reload open websites.');
 $('allow-form').onsubmit=async event=>{event.preventDefault();$('domain-error').textContent='';$('domain').removeAttribute('aria-invalid');try{const host=normalizeHost($('domain').value);if(settings.allowlist.includes(host))throw Error('This website is already allowed.');if(await commit({...settings,allowlist:[...settings.allowlist,host]},'Website allowed. Reload it in Safari.'))$('domain').value='';}catch(e){$('domain-error').textContent=e.message;$('domain').setAttribute('aria-invalid','true');$('domain').focus();}};
 $('custom').oninput=()=>{dirty=$('custom').value!==settings.custom;};
 $('custom-form').onsubmit=async event=>{event.preventDefault();$('custom-error').textContent='';$('custom').removeAttribute('aria-invalid');try{const custom=$('custom').value;compile(custom,{strict:true});validateCSS(custom);if(await commit({...settings,custom},'Filters saved. Reload open websites.')){dirty=false;render();}}catch(e){$('custom-error').textContent=e.message;$('custom').setAttribute('aria-invalid','true');$('custom').focus();}};

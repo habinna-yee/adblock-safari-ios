@@ -38,7 +38,7 @@ struct WelcomeView: View {
                     Link(destination: URL(string: "https://example.com")!) {
                         Label("Open a test website", systemImage: "safari").frame(maxWidth: .infinity).padding(8)
                     }.buttonStyle(.borderedProminent).tint(teal)
-                    Text("Includes converted EasyList and EasyPrivacy filters, © their contributors, GPLv3. Full sources and conversion reports are included in the project.").font(.caption).foregroundStyle(.secondary)
+                    Text("Includes converted EasyList, EasyPrivacy and AdGuard filters, © their contributors, GPLv3. Full sources and conversion reports are included in the project.").font(.caption).foregroundStyle(.secondary)
                 }.padding(24).frame(maxWidth: 650)
             }.navigationTitle("Welcome").navigationBarTitleDisplayMode(.inline)
         }

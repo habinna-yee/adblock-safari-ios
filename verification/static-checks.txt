@@ -2,4 +2,4 @@
 > harbor-safari@0.1.0 check
 > node scripts/check.mjs
 
-Manifest, scripts and 13,153 static rules checked.
+Manifest, scripts and 23,577 static rules checked (131,981 after Safari conversion; limit 150,000 including 4,500 reserved for custom rules).

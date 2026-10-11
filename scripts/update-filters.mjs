@@ -1,15 +1,17 @@
 // Fetch only trusted text filter sources. No downloaded JavaScript is ever executed.
 import fs from 'node:fs/promises';
-import {spawnSync} from 'node:child_process';
-import {compile,compactRules} from '../Extension/compiler.js';
-const root=new URL('../',import.meta.url);const downloads=[];
-for(const id of ['easylist','easyprivacy']){
- const response=await fetch(`https://easylist.to/easylist/${id}.txt`,{signal:AbortSignal.timeout(45000)});
- if(!response.ok)throw Error(`Could not download ${id}: ${response.status}`);
- const text=await response.text();if(text.length>10000000||!text.startsWith('[Adblock'))throw Error(`Unexpected ${id} file.`);
- const parsed=compile(text);if(parsed.network.length<1000)throw Error(`Suspiciously small ${id}; retaining old lists.`);
- downloads.push({id,text,count:compactRules(parsed.network).length});
+import {compile} from '../Extension/compiler.js';
+import {LISTS,buildLists} from './lists.mjs';
+const root=new URL('../',import.meta.url);const texts={};
+for(const list of LISTS){
+ const response=await fetch(list.source,{signal:AbortSignal.timeout(45000)});
+ if(!response.ok)throw Error(`Could not download ${list.id}: ${response.status}`);
+ const text=await response.text();if(text.length>10000000||!/^! Title: /m.test(text.slice(0,2000)))throw Error(`Unexpected ${list.id} file.`);
+ if(compile(text).network.length<list.minimum)throw Error(`Suspiciously small ${list.id}; retaining old lists.`);
+ texts[list.id]=text;
 }
-if(downloads.reduce((n,d)=>n+d.count,0)>30000)throw Error('Updated lists exceed the static rule budget. Old lists retained.');
-for(const {id,text} of downloads)await fs.writeFile(new URL(`vendor/${id}.txt`,root),text);
-const result=spawnSync(process.execPath,[new URL('scripts/build-filters.mjs',root).pathname],{stdio:'inherit'});process.exitCode=result.status??1;
+// Builds in memory first: lists that would exceed a rule budget never replace the bundled ones.
+const {files,report}=buildLists(texts);
+for(const list of LISTS)await fs.writeFile(new URL(`vendor/${list.id}.txt`,root),texts[list.id]);
+for(const [path,content] of Object.entries(files))await fs.writeFile(new URL(path,root),content);
+console.log(JSON.stringify(report.totals,null,2));
