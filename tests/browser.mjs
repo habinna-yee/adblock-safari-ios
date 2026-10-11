@@ -20,6 +20,7 @@ const server=http.createServer((req,res)=>{
  // Other hosts reach this server through --host-resolver-rules, so their URLs carry no port.
  const host=req.headers.host.split(':')[0];
  if(host==='weather.com'){res.setHeader('Content-Type','text/html');res.end(`<!doctype html><title>Forecast</title><main id="forecast">Today: sunny</main><div id="WxuAd-top">AdGuard Base ad slot</div><div class="adWrapper">AdGuard Mobile Ads slot</div><div class="regionStickyAds">EasyList ad slot</div><script src="http://s.w-x.co/helios/twc/ads.js"></script><script src="http://c.amazon-adsystem.com/aax2/apstag.js"></script>`);return;}
+ if(host==='foxnews.com'){res.setHeader('Content-Type','text/html');res.end('<!doctype html><title>Fox stand-in</title><main id="story">Story</main><div id="div-gpt-ad-top">Google ad slot</div>');return;}
  if(host==='partner.example'&&req.url==='/frame'){res.setHeader('Content-Type','text/html');res.end('<!doctype html><a href="http://partner.example/landing" target="_blank" style="position:fixed;inset:0;background:#fd0">Partner offer</a>');return;}
  if(req.url==='/picker'){res.setHeader('Content-Type','text/html');res.end('<!doctype html><title>Picker test</title><h2>Story</h2><iframe id="partner-frame" src="http://partner.example/frame" style="width:320px;height:100px;border:0"></iframe><a id="partner-link" href="http://partner.example/landing" target="_blank" style="display:block;width:320px;height:60px">Partner offer</a><div style="height:2000px"></div><script>window.addEventListener(\'click\',()=>window.open(\'http://partner.example/popunder\'),true);</script>');return;}
  if(host!=='127.0.0.1'){hits[host+req.url]=(hits[host+req.url]??0)+1;res.setHeader('Content-Type','text/javascript');res.end('');return;}
@@ -29,7 +30,7 @@ const server=http.createServer((req,res)=>{
 const url=`http://127.0.0.1:${server.address().port}`;
 let context;
 try{
- context=await chromium.launchPersistentContext(path.join(scratch,'profile'),{channel:'chromium',headless:true,hasTouch:true,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,`--host-resolver-rules=${['weather.com','s.w-x.co','c.amazon-adsystem.com','partner.example'].map(h=>`MAP ${h} 127.0.0.1:${server.address().port}`).join(', ')}`],viewport:{width:390,height:844}});
+ context=await chromium.launchPersistentContext(path.join(scratch,'profile'),{channel:'chromium',headless:true,hasTouch:true,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,`--host-resolver-rules=${['weather.com','foxnews.com','s.w-x.co','c.amazon-adsystem.com','partner.example'].map(h=>`MAP ${h} 127.0.0.1:${server.address().port}`).join(', ')}`],viewport:{width:390,height:844}});
  const worker=context.serviceWorkers()[0]??await context.waitForEvent('serviceworker');
  const id=new URL(worker.url()).host;
  const settings=await context.newPage();const errors=[];settings.on('pageerror',e=>errors.push(e.message));
@@ -78,6 +79,9 @@ try{
  assert.equal(await weather.locator('#forecast').isVisible(),true);
  for(const slot of ['#WxuAd-top','.adWrapper','.regionStickyAds'])assert.equal(await weather.locator(slot).isVisible(),false,`${slot} should be hidden`);
  assert.deepEqual(hits,{},'EasyList blocks weather.com ad scripts despite AdGuard exceptions');
+ // AdGuard turns generic hiding off on foxnews.com; that must not switch off EasyList's generic filters.
+ await weather.goto('http://foxnews.com/');await weather.waitForTimeout(300);assert.equal(await weather.locator('#story').isVisible(),true);assert.equal(await weather.locator('#div-gpt-ad-top').isVisible(),false,'EasyList generic filters still apply where AdGuard disables its own');
+ await weather.goto('http://weather.com/');await weather.waitForTimeout(300);
  await settings.getByRole('link',{name:'Protection',exact:true}).click();await settings.locator('#adguard-base').uncheck();await settings.waitForFunction(()=>!document.querySelector('#adguard-base').disabled);
  await weather.reload();await weather.waitForTimeout(300);
  assert.equal(await weather.locator('#WxuAd-top').isVisible(),true,'AdGuard Base toggle controls its filters');assert.equal(await weather.locator('.adWrapper').isVisible(),false);assert.equal(await weather.locator('.regionStickyAds').isVisible(),false);
@@ -98,6 +102,6 @@ try{
  await tap(await picker('hide'));assert.equal(await pickPage.locator('#partner-frame').isVisible(),false,'Picked ad frame hidden');
  assert.equal(opened.length,0);assert.deepEqual(Object.keys(hits).filter(k=>k.startsWith('partner.example')),[]);await pickPage.close();
  assert.deepEqual(errors,[]);
- const result={passed:true,engine:'Chromium MV3 (Safari manifest adapted only for service worker)',checks:[`${report.totals.compiledRules.toLocaleString()} static rules in ${Object.keys(report.lists).length} rulesets registered`,'network request blocked before reaching server','cosmetic hide','allowlist create/remove','global pause','custom validation/save','draft retention','element picker save','320px reflow','light/dark','reduced motion','weather.com stand-in: AdGuard hiding, EasyList blocks kept, list toggle','picker selects ad frames and links without opening them'],safariDeviceTested:false};
+ const result={passed:true,engine:'Chromium MV3 (Safari manifest adapted only for service worker)',checks:[`${report.totals.compiledRules.toLocaleString()} static rules in ${Object.keys(report.lists).length} rulesets registered`,'network request blocked before reaching server','cosmetic hide','allowlist create/remove','global pause','custom validation/save','draft retention','element picker save','320px reflow','light/dark','reduced motion','weather.com stand-in: AdGuard hiding, EasyList blocks kept, list toggle','AdGuard exceptions never switch off EasyList hiding','picker selects ad frames and links without opening them'],safariDeviceTested:false};
  await fs.writeFile(path.join(evidence,'browser-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
 }finally{await context?.close();server.close();await fs.rm(scratch,{recursive:true,force:true});}

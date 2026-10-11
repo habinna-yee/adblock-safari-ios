@@ -70,8 +70,11 @@ async function dispatch(message,sender) {
     if (!host || !top) return {enabled:false,consent:false,selectors:[]};
     const enabled = settings.enabled && !settings.allowlist.some(d=>matchesHost(top,d));
     if (!enabled || !settings.cosmetic) return {enabled,consent:enabled&&settings.consent,selectors:[]};
-    const sets = await Promise.all(LISTS.filter(id=>settings.lists[id]).map(id=>asset(`rules/${id}-cosmetic.json`)));
-    return {enabled,consent:enabled&&settings.consent,selectors:selectorsFor(host,[...sets.flat(),...compile(settings.custom).cosmetic])};
+    // Precedence matches the network rules: your filters, then EasyList and EasyPrivacy, then lists that supplement them.
+    const report = await asset('rules/report.json'), on = LISTS.filter(id=>settings.lists[id]);
+    const tier = ids => Promise.all(ids.map(id=>asset(`rules/${id}-cosmetic.json`))).then(sets=>sets.flat());
+    const [lists,supplements] = await Promise.all([tier(on.filter(id=>!report.lists[id]?.supplements)),tier(on.filter(id=>report.lists[id]?.supplements))]);
+    return {enabled,consent:enabled&&settings.consent,selectors:selectorsFor(host,compile(settings.custom).cosmetic,lists,supplements)};
   }
   if (message.type === 'addPicked') {
     if (sender.frameId !== 0 || !pageHost(sender.tab?.url) || pageHost(sender.url) !== pageHost(sender.tab.url)) throw Error('Open the picker on a normal website.');

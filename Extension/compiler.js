@@ -93,13 +93,18 @@ export function compile(text, {strict = false, startID = 1} = {}) {
   if (strict && rejected.length) throw Error(`Line ${rejected[0].line}: ${rejected[0].reason}`);
   return {network,cosmetic,rejected};
 }
-export function selectorsFor(host, rules) {
-  const applicable = rules.filter(r => (!r.included.length || r.included.some(d=>matchesHost(host,d))) && !r.excluded.some(d=>matchesHost(host,d)));
-  const off = new Set(applicable.filter(r=>r.disable).map(r=>r.disable));
-  if (off.has('all')) return [];
-  const exceptions = new Set(applicable.filter(r=>r.exception && !r.disable).map(r=>r.selector));
-  // Filters scoped only by excluded sites are generic, as in Adblock Plus.
-  return [...new Set(applicable.filter(r=>!r.exception && !exceptions.has(r.selector) && !off.has(r.included.length ? 'specific' : 'generic')).map(r=>r.selector))];
+// Each argument after host is a tier of rules, highest precedence first. A tier's exceptions apply to its own
+// filters and to later tiers, never to earlier ones.
+export function selectorsFor(host, ...tiers) {
+  const off = new Set(), exceptions = new Set(), selectors = new Set();
+  for (const rules of tiers) {
+    const applicable = rules.filter(r => (!r.included.length || r.included.some(d=>matchesHost(host,d))) && !r.excluded.some(d=>matchesHost(host,d)));
+    for (const r of applicable) if (r.disable) off.add(r.disable); else if (r.exception) exceptions.add(r.selector);
+    if (off.has('all')) break;
+    // Filters scoped only by excluded sites are generic, as in Adblock Plus.
+    for (const r of applicable) if (!r.exception && !exceptions.has(r.selector) && !off.has(r.included.length ? 'specific' : 'generic')) selectors.add(r.selector);
+  }
+  return [...selectors];
 }
 // Collapse equivalent pure-domain rules to preserve coverage within static-rule budgets.
 export function compactRules(rules) {

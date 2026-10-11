@@ -14,6 +14,7 @@
     "light/dark",
     "reduced motion",
     "weather.com stand-in: AdGuard hiding, EasyList blocks kept, list toggle",
+    "AdGuard exceptions never switch off EasyList hiding",
     "picker selects ad frames and links without opening them"
   ],
   "safariDeviceTested": false
