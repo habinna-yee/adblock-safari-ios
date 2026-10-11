@@ -1,0 +1,8 @@
+Normal unsigned build attempted:
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project iOS/Harbor.xcodeproj -scheme Harbor -configuration Debug -destination generic/platform=iOS -derivedDataPath <workspace>/work/DerivedData CODE_SIGNING_ALLOWED=NO build
+Result: FAILED during asset catalog processing. CoreSimulator service unavailable; no available simulator runtimes for platform iphonesimulator.
+
+Narrow native compile/link verification:
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project iOS/Harbor.xcodeproj -scheme Harbor -configuration Debug -destination generic/platform=iOS -derivedDataPath <workspace>/work/DerivedData CODE_SIGNING_ALLOWED=NO EXCLUDED_SOURCE_FILE_NAMES=Assets.xcassets build
+Result: BUILD SUCCEEDED (asset catalog excluded, unsigned).
+Verified embedded manifest, consent/content scripts, both static rulesets, filter report and Safari web-extension Info.plist registration in the built app bundle.

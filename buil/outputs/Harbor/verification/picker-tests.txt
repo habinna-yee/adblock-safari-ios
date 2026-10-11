@@ -1,0 +1,4 @@
+- heading "Publisher content" [level=1]
+- paragraph: Article text stays visible.
+- button "Start element picker" [active]
+- status: "Saved filter: #test-promo"

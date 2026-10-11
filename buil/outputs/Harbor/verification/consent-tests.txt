@@ -1,0 +1,13 @@
+- heading "Consent automation tests" [level=1]
+- paragraph: Local synthetic dialogs. No choices are submitted to outside websites.
+- status: 9 passed; 0 failed. All consent fixture checks passed.
+- list:
+  - listitem: "PASS · OneTrust: functional + necessary, all others off — OneTrust: necessary and functional preferences submitted"
+  - listitem: "PASS · Cookiebot: functional + necessary, all others off — Cookiebot: necessary and functional preferences submitted"
+  - listitem: "PASS · Complianz: functional + necessary, all others off — Complianz: necessary and functional preferences submitted"
+  - listitem: "PASS · CookieYes: functional + necessary, all others off — CookieYes: necessary and functional preferences submitted"
+  - listitem: "PASS · No consent submitted: unknown categories/state — OneTrust: choose cookies manually (unrecognized consent categories)"
+  - listitem: "PASS · No consent submitted: missing categories/state — OneTrust: choose cookies manually (not all categories are available)"
+  - listitem: "PASS · No consent submitted: locked categories/state — OneTrust: choose cookies manually (a cookie category is locked)"
+  - listitem: "PASS · No consent submitted: revert categories/state — OneTrust: choose cookies manually (preferences did not stay selected)"
+  - listitem: "PASS · No consent submitted: disabled categories/state — Waiting for a supported cookie dialog"

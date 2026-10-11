@@ -1,0 +1,1 @@
+{"profile":"product-admin","sourceRoots":["Extension"],"locale":"en","canonicalMap":"UX-CONTRACT.md","requiredCapabilities":["Form","Scrollbar","Toast","CRUD"],"commands":{"unit":"npm test","check":"npm run check"},"requiredCommands":["unit","check"],"evidence":{"crudFullFlow":"tests/background.test.mjs","failurePaths":"tests/background.test.mjs"}}

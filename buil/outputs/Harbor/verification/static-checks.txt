@@ -1,0 +1,5 @@
+
+> harbor-safari@0.1.0 check
+> node scripts/check.mjs
+
+Manifest, scripts and 13,153 static rules checked.

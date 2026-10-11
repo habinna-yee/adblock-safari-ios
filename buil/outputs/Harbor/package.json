@@ -1,0 +1,1 @@
+{"name":"harbor-safari","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","filters":"node scripts/build-filters.mjs","check":"node scripts/check.mjs"}}

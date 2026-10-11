@@ -1,0 +1,23 @@
+{
+  "builtAt": "2026-10-11T18:50:13.506Z",
+  "lists": {
+    "easylist": {
+      "source": "https://easylist.to/easylist/easylist.txt",
+      "sha256": "2b4bc77da2a7913ad6ed02a452bc35f6c8cc37ca4d902949084a5094923d2e3b",
+      "version": "202610111827",
+      "networkFilters": 52827,
+      "compiledRules": 3891,
+      "cosmeticFilters": 24030,
+      "skipped": 4382
+    },
+    "easyprivacy": {
+      "source": "https://easylist.to/easylist/easyprivacy.txt",
+      "sha256": "8d6ccf8cf422ea7c6c75fcc873808fb4595ed6a883cc85a7b751209f91d95bec",
+      "version": "202610111827",
+      "networkFilters": 56225,
+      "compiledRules": 9262,
+      "cosmeticFilters": 2,
+      "skipped": 82
+    }
+  }
+}

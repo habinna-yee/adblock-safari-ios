@@ -1,0 +1,86 @@
+(() => {
+  const api = globalThis.browser ?? globalThis.chrome;
+  let sheetHost, generation=0, stopPicker;
+  async function refresh() {
+    const current=++generation;
+    try {
+      const reply = await api.runtime.sendMessage({type:'pageConfig'});
+      if(current!==generation) return;
+      if(!reply?.ok) return;
+      globalThis.HarborConsent?.configure(!!reply.data.consent);
+      sheetHost?.remove(); sheetHost=null;
+      if(!reply.data.enabled || !reply.data.selectors.length) return;
+      const style=document.createElement('style');
+      (document.head ?? document.documentElement).append(style); sheetHost=style;
+      // Separate rules keep one unsupported site selector from invalidating other filters.
+      for(const selector of reply.data.selectors) {
+        try { if(CSS.supports(`selector(${selector})`)) style.sheet.insertRule(`${selector}{display:none!important}`,style.sheet.cssRules.length); } catch { /* unsupported standard CSS is safely ignored */ }
+      }
+    } catch { /* No DOM changes if Safari revokes access or unloads the extension. */ }
+  }
+  function selectorFor(element) {
+    const pieces=[];
+    for(let node=element;node && node!==document.documentElement;node=node.parentElement) {
+      if(node.id) {pieces.unshift(`#${CSS.escape(node.id)}`);break;}
+      let piece=node.localName;
+      const classes=[...node.classList].filter(c=>c.length<80).slice(0,2);
+      if(classes.length) piece+=classes.map(c=>`.${CSS.escape(c)}`).join('');
+      const peers=node.parentElement ? [...node.parentElement.children].filter(n=>n.localName===node.localName) : [];
+      if(peers.length>1) piece+=`:nth-of-type(${peers.indexOf(node)+1})`;
+      pieces.unshift(piece);
+      if(pieces.length>=8) break;
+    }
+    return pieces.join(' > ');
+  }
+  function pick() {
+    if(window!==window.top) return;
+    stopPicker?.();
+    const restoreFocus=document.activeElement;
+    const host=document.createElement('div');
+    host.style.cssText='position:fixed!important;inset:0!important;z-index:2147483647!important;pointer-events:none!important';
+    const shadow=host.attachShadow({mode:'open'});
+    shadow.innerHTML=`<style>
+      :host{all:initial} *{box-sizing:border-box} .box{position:fixed;border:3px solid #086e83;background:#086e8322;pointer-events:none}
+      .panel{position:fixed;bottom:max(16px,env(safe-area-inset-bottom));left:12px;right:12px;margin:auto;max-width:480px;padding:18px;background:#fff;color:#162c39;border:1px solid #b4c9d2;border-radius:18px;box-shadow:0 4px 40px #0004;font:16px/1.4 system-ui;pointer-events:auto}
+      p{margin:0 0 10px} button{min-height:44px;padding:10px 16px;border:1px solid #086e83;border-radius:10px;background:#086e83;color:white;font:600 15px system-ui;cursor:pointer} button:focus-visible{outline:3px solid #db7a0e;outline-offset:2px} button:disabled{opacity:.5} #cancel{background:white;color:#162c39} .actions{display:flex;gap:10px;flex-wrap:wrap} code{display:block;max-height:80px;overflow:auto;font:12px/1.4 ui-monospace;overflow-wrap:anywhere;margin:0 0 10px}
+      </style><div class="box" hidden></div><section class="panel" role="region" aria-label="Harbor element picker"><p id="message" role="status">Tap an element to select it. Then choose Hide element.</p><code id="selector"></code><div class="actions"><button id="hide" disabled>Hide element</button><button id="parent" disabled>Select parent</button><button id="cancel">Cancel</button></div></section>`;
+    document.documentElement.append(host);
+    const box=shadow.querySelector('.box'), status=shadow.getElementById('message'), save=shadow.getElementById('hide'), parent=shadow.getElementById('parent');
+    let target, selector, busy=false;
+    function select(element) {
+      if(!element || [document.body,document.documentElement,host].includes(element)) return;
+      target=element; selector=selectorFor(target);
+      const rect=target.getBoundingClientRect();
+      box.hidden=false; box.style.cssText=`left:${rect.left}px;top:${rect.top}px;width:${rect.width}px;height:${rect.height}px`;
+      shadow.getElementById('selector').textContent=selector;
+      save.disabled=!selector;parent.disabled=target.parentElement===document.body;
+      status.textContent='This rule will hide matching elements on this site. You can remove it in My filters.';
+    }
+    function intercept(event) {
+      if(event.composedPath().includes(host) || busy) return;
+      event.preventDefault();event.stopImmediatePropagation();
+      if(event.type==='click') select(event.target);
+    }
+    function keyboard(event) {if(event.key==='Escape'&&!busy){event.preventDefault();stopPicker();}}
+    stopPicker=()=>{host.remove();document.removeEventListener('click',intercept,true);document.removeEventListener('pointerdown',intercept,true);document.removeEventListener('keydown',keyboard,true);window.removeEventListener('scroll',reposition,true);restoreFocus?.focus?.();stopPicker=null;};
+    function reposition(){if(target)select(target);}
+    document.addEventListener('click',intercept,true);document.addEventListener('pointerdown',intercept,true);document.addEventListener('keydown',keyboard,true);window.addEventListener('scroll',reposition,true);
+    shadow.getElementById('cancel').onclick=()=>{if(!busy)stopPicker();};
+    parent.onclick=()=>select(target?.parentElement);
+    save.onclick=async()=>{
+      if(busy||!selector)return;busy=true;save.disabled=true;parent.disabled=true;
+      try {
+        const result=await api.runtime.sendMessage({type:'addPicked',selector});
+        if(!result?.ok)throw Error(result?.error ?? 'Could not save. Try again.');
+        stopPicker();await refresh();
+      } catch(error){status.textContent=error.message;save.disabled=false;parent.disabled=false;} finally{busy=false;}
+    };
+    shadow.getElementById('cancel').focus();
+  }
+  api.runtime.onMessage.addListener(message=>{
+    if(message.type==='pageStatus')return Promise.resolve({consent:globalThis.HarborConsent?.status()??'Unavailable'});
+    if(message.type==='refresh'){void refresh();return Promise.resolve({ok:true});}
+    if(message.type==='pick'){pick();return Promise.resolve({ok:true});}
+  });
+  if(document.documentElement) void refresh(); else document.addEventListener('DOMContentLoaded',refresh,{once:true});
+})();

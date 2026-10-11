@@ -1,0 +1,2 @@
+window.contentListener=null;window.testSelectors=['.sponsor'];
+window.browser={runtime:{onMessage:{addListener(fn){window.contentListener=fn;}},async sendMessage(message){if(message.type==='pageConfig')return {ok:true,data:{enabled:true,consent:false,selectors:window.testSelectors}};if(message.type==='addPicked'){window.testSelectors.push(message.selector);document.getElementById('result').textContent=`Saved filter: ${message.selector}`;return {ok:true,data:{}};}}}};

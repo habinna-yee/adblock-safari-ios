@@ -1,0 +1,330 @@
+[
+  {
+    "line": 9458,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 10460,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 13835,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 13931,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 13932,
+    "reason": "Enter a hostname, such as example.com, without a URL or path."
+  },
+  {
+    "line": 13936,
+    "reason": "Unsupported option: rewrite=abp-resource:blank-js."
+  },
+  {
+    "line": 17618,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17619,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17620,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17621,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17622,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17623,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17735,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17736,
+    "reason": "Use an ASCII URL pattern; regular-expression filters are not supported."
+  },
+  {
+    "line": 17921,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 17922,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 17924,
+    "reason": "Unsupported option: redirect=nooptext."
+  },
+  {
+    "line": 17926,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17927,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17929,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17930,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17932,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17934,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17936,
+    "reason": "Unsupported option: redirect=chartbeat.js."
+  },
+  {
+    "line": 17937,
+    "reason": "Unsupported option: redirect=chartbeat.js."
+  },
+  {
+    "line": 17939,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17940,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17941,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17942,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17943,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17944,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17945,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17946,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17947,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17948,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17949,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17952,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17953,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17954,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17955,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17956,
+    "reason": "Unsupported option: redirect=noopjson."
+  },
+  {
+    "line": 17957,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17958,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17959,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17960,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17961,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17962,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17963,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17964,
+    "reason": "Unsupported option: redirect=noopjson."
+  },
+  {
+    "line": 17965,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17966,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17967,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17968,
+    "reason": "Unsupported option: redirect=noopjs."
+  },
+  {
+    "line": 17970,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17972,
+    "reason": "Unsupported option: method=POST."
+  },
+  {
+    "line": 17974,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17976,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17978,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17979,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17981,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 17984,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17986,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17989,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 17991,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17993,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 17994,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 17996,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 18000,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 18001,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 18004,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 18005,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 18007,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 18011,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 18012,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 18015,
+    "reason": "Unsupported option: redirect-rule."
+  },
+  {
+    "line": 18017,
+    "reason": "Unsupported option: important."
+  },
+  {
+    "line": 18019,
+    "reason": "Unsupported option: redirect=noop.txt."
+  },
+  {
+    "line": 18022,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 18025,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 18026,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  },
+  {
+    "line": 18028,
+    "reason": "Unsupported option: redirect=noop.js."
+  },
+  {
+    "line": 18030,
+    "reason": "Use a standard CSS selector. Scriptlets and procedural filters are not supported."
+  }
+]
