@@ -4,6 +4,9 @@ build/
 node_modules/
 *.xcuserstate
 xcuserdata/
+*.xcodeproj/project.xcworkspace/
+# Your signing team and bundle ID; see README.
+iOS/Local.xcconfig
 *.zip
 # Old nested layout and local test-browser downloads (buil/work) from before the move.
 buil/

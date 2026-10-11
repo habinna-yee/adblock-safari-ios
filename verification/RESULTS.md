@@ -20,6 +20,7 @@
 
 - **Full iOS build**: asset-catalog processing fails with `No available simulator runtimes for platform iphonesimulator`, after CoreSimulator service connection errors. Build without icon asset processing succeeds. Do not interpret that narrower build as a completed distribution build. The icon assets and normal build settings remain in the Xcode project for a configured development host.
 - **Safari extension packaging helper**: reports it cannot access/parse the supplied manifest path in this environment. The project was generated directly by `scripts/generate-project.py`; native compilation validates that project's targets and embedded resources. Actual Safari runtime manifest loading remains a device acceptance item.
+- **Signing through `iOS/Harbor.xcconfig`** (October 11): the project reads the team and bundle ID from the git-ignored `iOS/Local.xcconfig` through `#include?`. `scripts/save-signing.py` was tested on a project file saved by Xcode and on a stash diff, but no Xcode build has used this setup yet. Confirm Xcode shows your team and bundle ID and builds.
 - No signing team selected, signing credentials used, device installation, App Store upload, iPhone/iPad Safari validation, VoiceOver audit, physical touch test, or live provider consent test performed.
 - Light theme, forced colors, reduced motion, keyboard matrix and offline behavior have source support but were not fully exercised in the native target.
 

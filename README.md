@@ -7,7 +7,7 @@ Harbor is an iOS/iPadOS app with a Safari Web Extension. It includes network ad/
 ## Open and install
 
 1. Open `iOS/Harbor.xcodeproj` in Xcode. Select the shared **Harbor** scheme.
-2. Select your development team in **Signing & Capabilities** for both **Harbor** and **Harbor Extension**. Replace `com.example.Harbor` and `com.example.Harbor.Extension` with unique matching identifiers. The extension identifier must keep the containing app identifier as its prefix.
+2. In **Signing & Capabilities** for the **Harbor** target, select your development team and replace `com.example.Harbor` with an identifier of your own, such as `com.yourname.Harbor`. Quit Xcode and run `python3 scripts/save-signing.py`. It saves both to `iOS/Local.xcconfig`, which git ignores, and restores the project file, so pulling updates never conflicts with your signing. The extension's identifier follows as `com.yourname.Harbor.Extension`. You can also write `iOS/Local.xcconfig` yourself: `DEVELOPMENT_TEAM = <team ID>` and `HARBOR_BUNDLE_ID = com.yourname.Harbor`.
 3. Select your connected iPhone/iPad (iOS **16.4 or newer**) and run. Xcode must have the matching platform support installed. An Apple signing identity and trusted development device are required.
 4. On the device: **Settings → Apps → Safari → Extensions → Harbor**, enable Harbor and grant access to your chosen websites. On older iOS releases, Safari is directly under Settings. Private Browsing requires its separate permission.
 5. Open a normal website in Safari, reload it, and choose Harbor from Safari’s page menu. Its **Settings** button opens the full configuration.
@@ -86,7 +86,7 @@ npm test
 npm run check
 node scripts/build-filters.mjs       # rebuild from checked-in snapshots, offline
 node scripts/update-filters.mjs      # download every list over HTTPS and rebuild
-python3 scripts/generate-project.py # deterministic Xcode project; resets signing identifiers
+python3 scripts/generate-project.py # deterministic Xcode project; signing stays in iOS/Local.xcconfig
 ```
 
 List sources and how they combine are defined in `scripts/lists.mjs`; AdGuard's Safari builds are read from AdGuard's FiltersRegistry on GitHub. The updater builds in memory first and keeps the bundled lists if the new ones would exceed Safari's or Chromium's rule limits. After updating filters, review skipped-rule reports, run checks, build, and complete the device matrix before shipping. The updater fetches text data only; it does not download or execute code. Browser storage is bounded and no filter source is fetched during normal browsing.

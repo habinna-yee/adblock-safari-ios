@@ -1,0 +1,5 @@
+// Your team and bundle ID go in Local.xcconfig, which git ignores, so updates never overwrite them.
+// scripts/save-signing.py writes it from the team and bundle ID chosen in Xcode.
+DEVELOPMENT_TEAM =
+HARBOR_BUNDLE_ID = com.example.Harbor
+#include? "Local.xcconfig"
